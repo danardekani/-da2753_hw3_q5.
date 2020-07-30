@@ -17,13 +17,14 @@ int main()
         cout << "Underweight" << endl;
     } else if (bmi <= 24.9)
     {
-        cout << "Normal";
+        cout << "Normal" << endl;
     } else if (bmi <= 30 )
     {
-        cout << "Overweight";
+        cout << "Overweight" << endl;
     } else
-        cout << "Obese";
+        cout << "Obese" << endl;
 
+    cout << bmi << endl;
     return 0;
 
 }
