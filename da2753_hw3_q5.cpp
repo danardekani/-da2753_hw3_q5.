@@ -3,16 +3,27 @@ using namespace std;
 
 int main()
 {
-    double weight, height, bmi, in_to_m, lbs_to_kgs;
+    double weight, height, bmi;
 
     cout << "Please enter weight (in pounds): ";
     cin >> weight;
     cout << "Please enter height (in inches): ";
-    cin >> height
+    cin >> height;
 
-    lbs_to_kilos = weight * 0.453592;
-    in_to_m = height * 0.0254;
+    bmi = (703 * weight)/(height * height);
 
-    bmi = lbs_to_kilos / in_to_m
+    if (bmi <= 18.5)
+    {
+        cout << "Underweight" << endl;
+    } else if (bmi <= 24.9)
+    {
+        cout << "Normal";
+    } else if (bmi <= 30 )
+    {
+        cout << "Overweight";
+    } else
+        cout << "Obese";
+
+    return 0;
 
 }
